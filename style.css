@@ -1,0 +1,28 @@
+body {
+	background-image: url(/images/KnightPass-title.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-color:#464646;
+}
+button {
+	background-image: url(/images/Start-button.png);
+	width: 222px;
+	height: 95px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color:transparent;
+	border:0px;
+	position:absolute;
+	left:50%;
+	top:75%;
+	transform:translate(-50%,-75%);
+}
+button:hover {
+	background-image: url(/images/Start-button-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color:transparent;
+	border:0px;
+}

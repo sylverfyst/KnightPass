@@ -1,0 +1,55 @@
+Player Object 
+{
+	Str = 0
+	Spd = 0
+	Def = 0
+	Mag = 0
+	Luc = 0
+	plus = ""
+	minus = "" 
+	Hit = Spd 
+	Evade = Luck
+	nextlevel = level * 100
+	weapon = {1,2, or 3}
+	//1 is sword, 2 is axe, 3 is lance
+
+	initialize() {
+		setPlus();
+		setMinus();
+		Str = setStr()
+	}
+
+	public int [] getWeaponTriangleBonus(player1,player2) {
+	
+		if(p1.weapon == p2.weapon) {
+			p1 Weapon Triangle Bonus = 0
+			p2 Weapon Triangle Bonus = 0
+		}
+		else if (p1.weapon == 1 && p2.weapon == 2) {
+			p1 Weapon Triangle Bonus = 1
+			p2 Weapon Triangle Bonus = -1
+		}
+		else if(p1.weapon == 3 && p2.weapon == 2 ){
+			p1 Weapon Triangle Bonus = -1
+			p2 Weapon Triangle Bonus = 1
+		}
+		else if (p1.weapon == 2 && p2.weapon == 1) {
+			p1 Weapon Triangle Bonus = -1
+			p2 Weapon Triangle Bonus = 1
+		}
+		else if (p1.weapon == 2 && p2.weapon == 3) {
+			p1 Weapon Triangle Bonus = 1
+			p2 Weapon Triangle Bonus = -1
+		}
+		else if(p1.weapon == 3 && p2.weapon == 1 ){
+			p1 Weapon Triangle Bonus = 1
+			p2 Weapon Triangle Bonus = -1
+		}
+		else(p1.weapon == 1 && p2.weapon == 3 ){
+			p1 Weapon Triangle Bonus = -1
+			p2 Weapon Triangle Bonus = 1
+		}
+		return [p1 Weapon Triangle Bonus, p2 Weapon Triangle Bonus];	
+	}
+}
+

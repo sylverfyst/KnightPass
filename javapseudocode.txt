@@ -1,0 +1,74 @@
+/*
+	public void chooseWeapon(int x){
+		weapon = x;
+		generateStats();
+	}
+	public void generateStats(int weapon){
+		if(weapon == 1){
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x); 
+		}
+		else if(weapon == 2){
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x);  
+		}
+		else 
+		{
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x); 
+		}
+	}
+	
+	
+	public void levelup() {
+		setStr(Str + randomNumber(between 0 and 5 integers);
+		setSpd(Spd + randomNumber(between 0 and 5 integers);
+		setDef(Def + randomNumber(between 0 and 5 integers);
+		setMag(Mag + randomNumber(between 0 and 5 integers);
+		setLuc(Luc + randomNumber(between 0 and 5 integers);
+		level += 1;
+		
+	}
+	
+	
+	public void setStr(int x) {
+		Str = x;
+	}
+	public void setSpd(int x) {
+		Spd = x;
+	}
+	public void setDef(int x) {
+		Def = x;
+	}
+	public void setMag(int x) {
+		Mag = x;
+	}
+	public void setLuc(int x) {
+		Luc = x;
+	}
+	public int getStr() {
+		return Str;
+	}
+	public int getSpd() {
+		return Spd;
+	}
+	public int getDef() {
+		return Def;
+	}
+	public int getMag() {
+		return Mag;
+	}
+	public int getLuc() {
+		return Luc;
+	}
+	*/
+

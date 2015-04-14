@@ -1,0 +1,87 @@
+function player()
+{
+	this.Str = 0;
+	this.Spd = 0;
+	this.Def = 0;
+	this.Mag = 0;
+	this.Luc = 0;
+	this.level = 1;
+	this.Hit = Spd; 
+	this.Evade = Luc;
+	this.nextlevel = level * 100;
+	//1 is sword, 2 is axe, 3 is lance
+	this.weapon = 0;
+	
+	this.chooseWeapon = function(x) {
+		weapon = x;
+		generateStats();
+	}
+	this.generateStats(w) {
+		if(w == 1){
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x); 
+		}
+		else if(w == 2){
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x);  
+		}
+		else 
+		{
+			setStr(x); 
+			setSpd(x); 
+			setDef(x); 
+			setMag(x); 
+			setLuc(x); 
+		}
+	}
+	this.levelup = function() {
+		setStr(Str + (Math.floor(Math.random() * (5 - 0)) + 0));
+		setSpd(Spd + (Math.floor(Math.random() * (5 - 0)) + 0));
+		setDef(Def + (Math.floor(Math.random() * (5 - 0)) + 0));
+		setMag(Mag + (Math.floor(Math.random() * (5 - 0)) + 0));
+		setLuc(Luc + (Math.floor(Math.random() * (5 - 0)) + 0));
+		level += 1;
+		
+	}
+	this.setStr = function(x) {
+		Str = x;
+	}
+	this.setSpd = function(x) {
+		Spd = x;
+	}
+	this.setDef = function(x) {
+		Def = x;
+	}
+	this.setMag = function(x) {
+		Mag = x;
+	}
+	this.setLuc = function(x) {
+		Luc = x;
+	}
+	this.getStr = function() {
+		return Str;
+	}
+	this.getSpd = function() {
+		return Spd;
+	}
+	this.getDef = function() {
+		return Def;
+	}
+	this.getMag = function() {
+		return Mag;
+	}
+	this.getLuc = function() {
+		return Luc;
+	}
+	this.getweapon = function() {
+		return weapon;
+	}
+}
+	
+	
